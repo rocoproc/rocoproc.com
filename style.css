@@ -57,3 +57,11 @@ body {
 .button:hover {
   background-color: #1C8447;
 }
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('Kanit-Regular.woff2') format('woff2'),
+    url('Kanit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
