@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <title>Rocoproc</title>
@@ -21,6 +22,22 @@
       <a href="https://docs.rocoproc.com" class="button">API docs</a>
     </div>
   </div>
+  <script>
+    function adjustBackgroundImageScale() {
+      const canvas = document.querySelector(".canvas-container");
+      const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (width <= 320) {
+        canvas.style.transform = "scale(0.4)";
+      } else if (width <= 768) {
+        canvas.style.transform = "scale(0.5)";
+      } else if (width < 1024) {
+        canvas.style.transform = "scale(1)";
+      } else {
+        canvas.style.transform = "scale(1)";
+      }
+    }
+    window.onload = window.onresize = adjustBackgroundImageScale;
+  </script>
 </body>
 
 </html>
