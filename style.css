@@ -58,7 +58,7 @@ body {
   font-size: 15px;
   font-family: 'Kanit', sans-serif;
   color: white;
-  background-color: #24AE60;
+  background-color: #20784F;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -66,5 +66,5 @@ body {
 }
 
 .button:hover {
-  background-color: #1C8447;
+  background-color: #1F543C;
 }
